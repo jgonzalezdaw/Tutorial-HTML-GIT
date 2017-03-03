@@ -1,16 +1,20 @@
 @CHARSET "UTF-8";
-body {
-    margin: 0;
+body{
+    display:block;
+    margin:auto;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 410px;
+    margin: 0px;
+    padding: 0px;
+    width:220px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
-    overflow: auto;
+}
+div{
+    width:80%;
+    margin-left:230px;
 }
 li a {
     display: block;
