@@ -1,8 +1,7 @@
 @CHARSET "UTF-8";
-body{
-    display:block;
-    margin: auto;
+html,body,ul,h2{
     padding: 0px;
+    margin: 0px;
 }
 ul {
     list-style-type: none;
@@ -37,22 +36,25 @@ li a:hover:not(.active) {
 }
 .dropdown-content {
     display: none;
-    position: absolute;
+    position:absolute;
     background-color: #f9f9f9;
     padding: 10px 12px;
-    z-index: 1;
+    align-self: center;
+
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: inline;
     position: absolute; 
-    top: 0;
-    left: 0px;
- 	width: 377px; 
-	height: 190px;
+    top: 0px;
+    left: 50px;
+ 	width: 200px; 
+	height: 130px;
  	    
 } 
-img.menu{
-	width: 200px; 
-	height: 180px;
+ul img{
+	width:200px; 
+	height: 100px;
+    
 }
+
