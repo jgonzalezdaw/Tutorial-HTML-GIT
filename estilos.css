@@ -1,13 +1,14 @@
 @CHARSET "UTF-8";
 body{
     display:block;
-    margin:auto;
+    margin: auto;
+    padding: 0px;
 }
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    width:400px;
+    width:300px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
