@@ -1,7 +1,20 @@
 @CHARSET "UTF-8";
+<<<<<<< master
 html,h2{
     padding: 0px;
     margin: 0px;
+=======
+
+html,h2{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    margin:0px;
+    display:auto;
+    
+>>>>>>> Margen Superior Arreglado. Retocando Menú
 }
 body{
     margin: 0px;
@@ -13,10 +26,17 @@ body{
     position: fixed;
     background-color: burlywood;
 }
+<<<<<<< master
 .mainmenu, .submenu{
     list-style: none;
     padding: 0;
     margin: 0;
+=======
+div#texto{
+    width:80%;
+    margin-left: 400px;
+    padding:0px;
+>>>>>>> Margen Superior Arreglado. Retocando Menú
 }
 .mainmenu a{
     display: block;
@@ -88,6 +108,21 @@ li a.eclipse {
 .source{
     display:block;
 
+<<<<<<< master
+=======
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0px;
+ 	width: 120px; 
+	height: 60px;
+ 	    
+} 
+img.menu{
+	width: 160px; 
+	height: 110px;
+>>>>>>> Margen Superior Arreglado. Retocando Menú
 }
 .sourceimg{
     width: 150px;
