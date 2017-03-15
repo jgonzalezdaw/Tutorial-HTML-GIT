@@ -1,30 +1,73 @@
 @CHARSET "UTF-8";
-html,body,ul,h2{
+html,body,h2,nav,ul{
     padding: 0px;
     margin: 0px;
 }
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width:200px;
+.navigation {
+    display: block;
+    width:250px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
 }
-div#titulo{
-    margin-left:210px;
-   
+.mainmenu .submenu{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-div#texto{
-    width:80%;
-    margin-left:210px;
+.mainmenu a{
+    display: block;
+    background-color: none;
+    text-decoration: none;
+    padding: 10px;
+    color:#000;
+}
+.mainmenu a:hover{ 
+    background-color: lightslategrey;
+}
+.mainmenu li:hover.submenu{
+    display: block;
+    max-height: 200px;
+}
+.submenu a{
+    background-color: beige;
+}
+.submenu a:hover{
+    background-color: bisque;
+}
+.submenu{
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+#titulo{
+    margin-left:260px;
+   width: 200px;
+}
+#texto{
+    margin-top: 0;
+    width:100%;
+    margin-left:260px;
 }
 li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+padding: 5px 12px;
     text-decoration: none;
+}
+li ul{
+    display:none;
+    position: absolute;
+    min-height: auto;
+}
+.info li:hover > ul{
+    display: block;
+    position: absolute;
 }
 li a.home {
     background-color: orangered;
@@ -52,31 +95,36 @@ li a:hover:not(.active) {
 }
 .dropdown{
 	margin:0;
+    display: block;
+    min-height: auto;
 
 }
-.dropdown-content {
-    display: none;
-    position:absolute;
-    background-color: none;
+
+.dropdown-content li a {
+    display: block;
+    background-color: darkgrey;
     padding: 10px 12px;
-    align-self: center;
 
-}
- 
-ul img{
-	width:200px; 
-	height: 100px;
-    
-}
-.sourcemenu{
-    display:inline-flex;
-    margin-left:30px;
-    width: 130px;
-    height: 110px;
 }
 .menu{
+    width: 200px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+    
+}
+.source{
+    display:block;
+
+}
+.sourceimg{
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+}
+.navigation > .menu{
     display:inline-flex;
-    margin-left: 15px;
+    margin-left: 0px;
     width: 165px;
     height: 100px;
 }
