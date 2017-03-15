@@ -2,82 +2,64 @@
 <html>
 
 <head>
-    <title> Tutorial HTML con GIT</title>
+    <title> Terminal</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="estilos.css" />
-    <style type="text/css">
-p1{color:white;
-	background-color:gray;
-	font-family: Lucida Console;
 
-	}
-
-div#texto{
-		text-align:center;
-	}
-
-h.big{
-	color:black;
-	font-size: 60px;
-	font-family: Lucida Console;
-	 line-height: 7.5;
-}
-h3{
-	font-size: 50px;
-	font-family: Lucida Console;
-}
-
-h2{
-	font-size: 60px;
-	font-family: Lucida Console;
-	line-height: 10;
-}
-
-
-
-</style>
 </head>
-<nav class=navigation>
-    <ul class=mainmenu>
-        <img class=terminalimg src=imagenes/terminalicon.png alt="SOURCETREE" title="LogoSourceTree"/>
-            <li><a href="index.html">Home</a></li>
-           
-            <li><a class=consola href=HT-Consola.html>Terminal</a>
-                <ul class=submenu>
-                    <li><a href="HT-Consola.html">¿Cómo crear un repositorio?</a></li>
-        	   </ul>                
-            </li>
-        
-            <li><a href=HT-Eclipse.html>Eclipse</a>
-                <ul class=submenu>
-                    <li><a href="HT-Eclipse.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-       
-      
-            <li><a href="HT-GitKraken.html">GitKraken</a>
-        	     <ul class=submenu>
-                    <li><a href="HT-GitKraken.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-      
-        
-            <li><a href=HT-Source.html>SourceTree</a>
-        	 <ul class=submenu>
-                    <li><a href="HT-Source.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-        
-        </ul>
-    </nav>
 <body>
+      <div id="menu">
+        <nav class="navigation">
+            <ul class="mainmenu">
+                <li>
+                    <a href="https://www.sourcetreeapp.com/"><img src="imagenes/bash-161382_960_720.png" alt="SourceTree" title="SourceTree" width="200" /></a>
+                </li>
+                <div class="separator"></div>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <input id="checkbox_toggle" type="checkbox" />
+                    <label for="checkbox_toggle">Terminal</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                </li>
+                </ul>
+                <li>
+                    <input id="checkbox_toggle2" type="checkbox" />
+                    <label for="checkbox_toggle2">Eclipse</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="checkbox_toggle3" type="checkbox" />
+                    <label for="checkbox_toggle3">Gitkraken</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                </li>
+                </ul>
+                <li>
+                    <input id="checkbox_toggle4" type="checkbox" />
+                    <label for="checkbox_toggle4">SourceTree</label>
+                    <ul class="submenu">
+                        <li><a href="HT-Source.html">Inicio</a></li>
+                        <li><a href="#DeshacerCambios">¿Cómo deshacer cambios?</a></li>
+                        <li><a href="#GuardarCambios">Guardar cambios</a></li>
+                        <li><a href="#OpcionesRamas">Opciones de ramas</a></li>
+                </li>
+                </ul>
+                <div class="separator"></div>
+            </ul>
+        </nav>
+    </div>
 
-    <div id="texto">
-
-       <h class="big"> Git por consola</h>
-      <p> <img src="http://rogerdudler.github.io/git-guide/img/arrow.png"></p>
+    <div id=texto>
        
-
 <h2>Getting Started</h2>
 
 <h3>Instalación</h3>

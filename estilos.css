@@ -30,6 +30,7 @@ li#phome:hover {
 .separator {
     
     border: 2px solid gray;
+    margin: 20px;
     
     
 }
@@ -53,6 +54,7 @@ li#phome:hover {
     text-decoration: none;
     padding: 10px;
     color: beige;
+    
 }
 .mainmenu a:hover {
     background-color: #2F3445;
@@ -67,11 +69,11 @@ input[type=checkbox] {
 }
 .submenu a {
     background-color: #2F3445;
-    color:lightgray;
+    color:darkgray;
 }
 .submenu a:hover {
-    background-color: #666;
-    color:aliceblue;
+    background-color: #42485A;
+    color:white;
 }
 .submenu {
     overflow: hidden;
@@ -83,7 +85,7 @@ div#texto {
     height: auto;
     margin-left: 500px;
     padding: 0px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
 }
 img.menu {
