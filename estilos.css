@@ -1,22 +1,20 @@
 @CHARSET "UTF-8";
-html,body,h2,nav,ul{
+html,h2{
     padding: 0px;
     margin: 0px;
 }
-.navigation {
-    display: block;
-    width:250px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
+body{
+    margin: 0px;
+    display: auto;
 }
-.mainmenu .submenu{
-    text-decoration: none;
+.navigation {
+   width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: burlywood;
+}
+.mainmenu, .submenu{
     list-style: none;
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -30,7 +28,7 @@ html,body,h2,nav,ul{
 .mainmenu a:hover{ 
     background-color: lightslategrey;
 }
-.mainmenu li:hover.submenu{
+.mainmenu li:hover .submenu{
     display: block;
     max-height: 200px;
 }
@@ -44,6 +42,10 @@ html,body,h2,nav,ul{
     overflow: hidden;
     max-height: 0;
     -webkit-transition: all 0.5s ease-out;
+    transition: 
+}
+div#menu{
+    position: fixed;
 }
 #titulo{
     margin-left:260px;
@@ -54,21 +56,7 @@ html,body,h2,nav,ul{
     width:auto;
     margin-left:260px;
 }
-li a {
-    display: block;
-    color: #000;
-padding: 5px 12px;
-    text-decoration: none;
-}
-li ul{
-    display:none;
-    position: absolute;
-    min-height: auto;
-}
-.info li:hover > ul{
-    display: block;
-    position: absolute;
-}
+
 li a.home {
     background-color: orangered;
     color: white;
@@ -81,7 +69,7 @@ li a.kraken {
     background-color: darkgoldenrod;
     color: white;
 }
-li a.terminal {
+li a.consola {
     background-color: darkgreen;
     color: white;
 }
@@ -89,23 +77,7 @@ li a.eclipse {
     background-color: darkmagenta;
     color: white;
 }
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-.dropdown{
-	margin:0;
-    display: block;
-    min-height: auto;
 
-}
-
-.dropdown-content li a {
-    display: block;
-    background-color: darkgrey;
-    padding: 10px 12px;
-
-}
 .menu{
     width: 200px;
     height: 120px;
@@ -118,14 +90,19 @@ li a:hover:not(.active) {
 
 }
 .sourceimg{
-    width: 140px;
-    height: 140px;
-    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    margin-left: 45px;
 }
 .navigation > .menu{
     display:inline-flex;
     margin-left: 0px;
     width: 165px;
     height: 100px;
+}
+.terminalimg{
+    width: 160px;
+    height: 160px;
+    margin-left: 40px;
 }
 
