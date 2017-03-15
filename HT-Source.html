@@ -6,46 +6,52 @@
     <title>SourceTree</title>
 </head>
 <body>
-<nav class=navigation>
-    <ul class=mainmenu>
-        <img class=sourceimg src=imagenes/SourceTreeNewIcon-300x300.png alt="SOURCETREE" title="LogoSourceTree"/>
-            <li><a href="index.html">Home</a></li>
-           
-            <li><a href=HT-Consola.html>Terminal</a>
-                <ul class=submenu>
-                    <li><a href="HT-Consola.html">¿Cómo crear un repositorio?</a></li>
-        	   </ul>                
-            </li>
-        
-            <li><a href=HT-Eclipse.html>Eclipse</a>
-                <ul class=submenu>
-                    <li><a href="HT-Eclipse.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-       
-      
-            <li><a href="HT-GitKraken.html">GitKraken</a>
-        	     <ul class=submenu>
-                    <li><a href="HT-GitKraken.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-      
-        
-            <li><a class=source href=HT-Source.html>SourceTree</a>
-        	 <ul class=submenu>
-                    <li><a href="HT-Source.html">¿Cómo crear un repositorio?</a></li>
-        	    </ul>
-            </li>
-        
-        </ul>
-    </nav>
-        
-    <div id=titulo>
-        <h2>Git con SourceTree</h2>
+   <div id="menu">
+        <nav class="navigation">
+            <ul class="mainmenu">
+                <li>
+                    <a href="index.html"><img src="http://mgaitan.github.io/intro-git/img/Git.png" alt="Home" title="Home" width="280" /></a>
+                </li>
+                <li>
+                    <input id="checkbox_toggle" type="checkbox" />
+                    <label for="checkbox_toggle">Terminal</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                </li>
+                </ul>
+                <li><input id="checkbox_toggle2" type="checkbox" />
+                    <label for="checkbox_toggle2">Eclipse</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                    </ul>
+                </li>
+                <li><input id="checkbox_toggle3" type="checkbox" />
+                    <label for="checkbox_toggle3">Gitkraken</label>
+                    <ul class="submenu">
+                        <li><a href="">index1</a></li>
+                        <li><a href="">index2</a></li>
+                        <li><a href="">index3</a></li>
+                </li>
+                </ul>
+                <li><input id="checkbox_toggle4" type="checkbox" />
+                    <label for="checkbox_toggle4">SourceTree</label>
+                    <ul class="submenu">
+                        <li><a href="HT-Source.html">Inicio</a></li>
+                        <li><a href="#DeshacerCambios">¿Cómo deshacer cambios?</a></li>
+                        <li><a href="#GuardarCambios">Guardar cambios</a></li>
+                        <li><a href="#OpcionesRamas">Opciones de ramas</a></li>
+                </li>
+                </ul>
+            </ul>
+        </nav>
     </div>
-
+    
 <div id=texto>
-<h1>Empezamos</h1>
+<h1>Git con SourceTree</h1>
 <h3>Como crear un repositorio </h3>
     <p>En SourceTree, podemos vincular una cuenta de GitHub o GitBucket y a partir de aqui, si seleccionamos la primera opción de la barra de arriba, podremos crear un repositorio nuevo a nuestra cuenta.</p>
 <h3>Git Init</h3>
@@ -58,18 +64,18 @@
     <img id=sourcetree src="imagenes/sourcetree%20barra.JPG"/>
         
 
-<h2>Guardar cambios</h2>
+    <h2><a id=GuardarCambios>Guardar cambios</a></h2>
 <h3>¿Cómo hacer un commit?</h3>
     <p>Con SourceTree es bastante sencillo realizar un Commit, ya que tendremos dentro de esta opción, lo que vendría a ser también el Git add, a continuación se puede observar</p>
      <p1>
         Si seleccionasemos Stage all, todos los archivos serian añadidos para el Commit, y en el recuadro de abajo, podremos poner un mensaje al Commit</p1>
         <img id=sourcetree src="imagenes/sourcetree%20barra.JPG"/>
-            <img id=sourcetree src="imagenes/commitsource.JPG" margin-right=0px/>
+            <img id=sourcetreecomit src="imagenes/commitsource.JPG" margin-right=0px/>
  
 
 
 
-<h2>Deshacer cambios</h2>
+    <h2><a id=DeshacerCambios>Deshacer cambios</a></h2>
 <p>Para deshacer cambios desde SourceTree se hace de una forma bastante sencilla</p>
     <p>Solo tendriamos que seleccionar el boton Discard, y seleccionar los archivos que queremos recuperar</p>
             <img id=sourcetree src="imagenes/sourcetree%20barra.JPG"/>
@@ -79,15 +85,8 @@
 <h3>Git merge</h3>
     <p>Para realizar un merge en SourceTree también tenemos la opción en la barra superior lo que no nos crea mucha dificultad a la hora de juntar varias ramas con la Master y así tener todos los cambios disponibles</p>
 
-<h1>Colaborando</h1>
-<h2>Syncing</h2>
-<h3>Git remote</h3>
-<h3>Git fetch </h3>
-<h3>Git pull</h3>
-<h3>Git push </h3>
 
-
-<h2>Opciones de Ramas</h2>
+    <h2><a id=OpcionesRamas>Opciones de Ramas</a></h2>
 <h3>Git branch</h3>
     <p>Para realizar un "Git branch" con SourceTree es tan sencillo como darle a la opcion de Branch en la barra superior, y nos saltará un menú donde introducir el nombre de la nueva rama, damos OK y se habrá creado</p>
 <h3>Git checkout</h3>

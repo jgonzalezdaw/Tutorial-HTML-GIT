@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 html,
-h2 {
+h2, 
+h1{
     margin: 0px;
     padding: 0px;
 }
@@ -8,7 +9,7 @@ h2 {
 h1,h2,h3,h4{
     color:beige;
 }
-p {
+p, p1 {
     color:azure;
 }
 body {
@@ -63,10 +64,12 @@ input[type=checkbox] {
     -webkit-transition: all 0.5s ease-out;
 }
 div#texto {
-    width: 80%;
-    margin-left: 400px;
+    width: 50%;
+    height: auto;
+    margin-left: 500px;
     padding: 0px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 30px;
 }
 img.menu {
     width: 160px;
@@ -82,4 +85,9 @@ img.menu {
 
 /* GITKRAKEN */
 
-/* SOURCETREE */
+/* SOURCETREE Sergio*/
+
+img#sourcetreecomit{
+    width: 700px;
+    height: 400px;
+}
