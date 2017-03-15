@@ -7,14 +7,18 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    width:300px;
+    width:200px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
 }
+div#titulo{
+    margin-left:210px;
+   
+}
 div#texto{
     width:80%;
-    margin-left:310px;
+    margin-left:210px;
 }
 li a {
     display: block;
@@ -22,8 +26,24 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
 }
-li a.active {
-    background-color: firebrick;
+li a.home {
+    background-color: orangered;
+    color: white;
+}
+li a.source {
+    background-color: darkblue;
+    color: white;
+}
+li a.kraken {
+    background-color: darkgoldenrod;
+    color: white;
+}
+li a.terminal {
+    background-color: darkgreen;
+    color: white;
+}
+li a.eclipse {
+    background-color: darkmagenta;
     color: white;
 }
 li a:hover:not(.active) {
@@ -37,24 +57,27 @@ li a:hover:not(.active) {
 .dropdown-content {
     display: none;
     position:absolute;
-    background-color: #f9f9f9;
+    background-color: none;
     padding: 10px 12px;
     align-self: center;
 
 }
-
-.dropdown:hover .dropdown-content {
-    display: inline;
-    position: absolute; 
-    top: 0px;
-    left: 50px;
- 	width: 200px; 
-	height: 130px;
- 	    
-} 
+ 
 ul img{
 	width:200px; 
 	height: 100px;
     
+}
+.sourcemenu{
+    display:inline-flex;
+    margin-left:30px;
+    width: 130px;
+    height: 110px;
+}
+.menu{
+    display:inline-flex;
+    margin-left: 15px;
+    width: 165px;
+    height: 100px;
 }
 
