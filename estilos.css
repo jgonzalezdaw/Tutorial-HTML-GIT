@@ -16,16 +16,29 @@ body {
     margin: 0px;
     display: auto;
     font-family: sans-serif;
-     background-color: #141422; 
+    background-color: #141422; 
+}
+
+/* Imagen GIT */
+
+li#phome:hover {
+    background-color: aliceblue;
 }
 
 /* Menu & Submenu */
+
+.separator {
+    
+    border: 2px solid gray;
+    
+    
+}
 
 .navigation {
     width: 300px;
     height: 100%;
     position: fixed;
-    background-color: #CCC;
+    background-color: #232735;
 }
 .mainmenu,
 .submenu {
@@ -36,13 +49,13 @@ body {
 .mainmenu a,
 .mainmenu label {
     display: block;
-    background-color: #CCC;
+    background-color: #232735;
     text-decoration: none;
     padding: 10px;
-    color: #000;
+    color: beige;
 }
 .mainmenu a:hover {
-    background-color: #C5C5C5;
+    background-color: #2F3445;
 }
 input[type=checkbox] {
     display: none;
@@ -53,10 +66,12 @@ input[type=checkbox] {
     
 }
 .submenu a {
-    background-color: #999;
+    background-color: #2F3445;
+    color:lightgray;
 }
 .submenu a:hover {
     background-color: #666;
+    color:aliceblue;
 }
 .submenu {
     overflow: hidden;

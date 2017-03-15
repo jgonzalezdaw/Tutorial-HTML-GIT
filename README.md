@@ -1,2 +1,2 @@
 # Tutorial-HTML-GIT
-Javier Aguilar, Gabriel Mas, Lluc Marquès .
+Javier Aguilar, Gabriel Mas, Lluc Marquès, Sergio Cascales .
