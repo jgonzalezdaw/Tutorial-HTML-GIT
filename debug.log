@@ -10,3 +10,6 @@
 [0315/105352.838:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Cansuck\settings.dat: Acceso denegado. (0x5)
 [0315/105352.915:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
 [0315/105354.205:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0315/143537.239:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Cansuck\settings.dat: Acceso denegado. (0x5)
+[0315/143537.348:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
+[0315/143537.966:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled

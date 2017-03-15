@@ -51,7 +51,7 @@ html,body,h2,nav,ul{
 }
 #texto{
     margin-top: 0;
-    width:100%;
+    width:auto;
     margin-left:260px;
 }
 li a {
