@@ -10,68 +10,59 @@ body {
 }
 
 /* Menu & Submenu */
+
 .navigation {
-  width: 300px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    background-color: #CCC;
 }
-
-.mainmenu, .submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-
-.mainmenu a, .mainmenu label {
-  display: block;
-  background-color: #CCC;
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
+.mainmenu a,
+.mainmenu label {
+    display: block;
+    background-color: #CCC;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
 }
-
 .mainmenu a:hover {
     background-color: #C5C5C5;
 }
-
 input[type=checkbox] {
     display: none;
 }
 .mainmenu input[type=checkbox]:checked ~ ul.submenu {
-  display: block;
-  max-height: 200px;
-
+    display: block;
+    max-height: 200px;
+    
 }
-
-
 .submenu a {
-  background-color: #999;
+    background-color: #999;
 }
-
 .submenu a:hover {
-  background-color: #666;
+    background-color: #666;
 }
-
 .submenu {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
 }
-
-div#menu {
-    position: fixed;
-}
-
 div#texto {
     width: 80%;
     margin-left: 400px;
     padding: 0px;
+    text-align: center;
 }
-
 img.menu {
     width: 160px;
     height: 110px;
 }
-
-.eclipse{
-	display:block;
+.eclipse {
+    display: block;
 }
