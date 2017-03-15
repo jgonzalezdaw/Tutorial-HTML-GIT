@@ -1,44 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Tutoriales de Git</title>
+    <title> Tutorial HTML con GIT</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="estilos.css" />
+    <style type="text/css">
+p1{color:white;
+	background-color:gray;
+	font-family: Lucida Console;
+
+	}
+
+body{
+		text-align:center;
+	}
+
+h.big{
+	color:black;
+	font-size: 60px;
+	font-family: Lucida Console;
+	 line-height: 7.5;
+}
+h3{
+	font-size: 50px;
+	font-family: Lucida Console;
+}
+
+h2{
+	font-size: 60px;
+	font-family: Lucida Console;
+	line-height: 10;
+}
+
+
+
+</style>
 </head>
+
 <body>
-	<header>
-	<h1 id="inicio">Tutorial de Git con diferentes programas</h1>
-	<nav>
+
+    
+
+    <div id="texto">
+
+       <h class="big"> Git por consola</h>
+      <p> <img src="http://rogerdudler.github.io/git-guide/img/arrow.png"></p>
+       
+
+<h2>Getting Started</h2>
+
+<h3>Instalación</h3>
+	<p>Para instalar git en nuestro equipo ejecutaremos en la consola el comando:</p>
+	<p1>:$ sudo apt-get install git</p1>
+
+	<p>Para comprobar que esta instalado y pasa saber la versión ejecutamos el comando:</p>
+	<p1>:$ git --version</p1>
+
+
+
+<h3>Git init</h3>
+
+	<p>Primero abrimos el terminal  y vamos a la carpeta donde esta el archivo que queremos seguir con git.</p>
+	<p>Una vez alli, para hacer el seguimiento con guit hacemos el comando:</p>
+	<p1>:$ git init</p1>
+
+<h3>Configurar Git </h3>
+
+	<p>Para configurar y añadir nuestra cuenta, haremos los siguientes comandos:</p>
+	<p1>:$ git config --global user.name "name" <br>
+
+	</br>:$ git config --global user.email "email"</p1>
+
+	<p>Para consultar los valores de estas variables en el futuro, podemos usar el comando:</p>
+	<p1>:$ git config --global --list </p1>
+
+<h3>Git Clone </h3>
+
+	<p>Crea una copia local del repositorio local ejecutando:</p>
+	<p1>$: git clone /path/to/repository</p1>
+	<p>Si queremos usar un servidor remoto, usaremos el comando:</p>
+	<p1>$: git clone username@host:/path/to/repository</p1>
+
+
+
+<h2>Guardar cambios</h2>
+<h3>Git add </h3>
+
+	<p>Para añadir el archivo hacemos el comando: </p>
+	<p1>:$ git add "Archivo/os"</p1>
+
+<h3>Como hacer un commit</h3>
+
+	<p>para hacer un commit pondremos en consola el siguiente comando: </p>
+	<p1>:$ git commit -m ”mensaje que queremos añadir”</p1>
+	<p>Si solo ponemos <p1>:$ git commit</p1> nos saldra el editor predeterminado para añadir el mensaje del commit</p>
+
+
+
+<h2>Inspecting a repository</h2>
+<h3>Git status </h3>
+	<p>Este comando sirve para ver el estado de los arhivos.</p>
+	<p>Para ver el estado de nuestros archivos tendremos que hacer el comando:</p>
+	<p1>:$ git status</p1>
+
+	<p>Los arhivos pueden estar en tres estados diferentes:</p>
 	<ul>
-		<li><a href="#">GitKraken</a>
-			<ul>
-				<li><a href="HT-GitKraken.html">How to</a></li>
-				<li><a href="A-GitKraken.html">Autor</a></li>
-
-			</ul>
-			</li>
-		<li>
-			<a href="#">Source Tree</a>
-			<ul>
-				<li><a href="HT-Source.html">How to</a></li>
-				<li><a href="A-Source.html">Autor</a></li>
-
-			</ul>
-		</li>
-		<li>
-			<a href="#">Eclipse</a>
-			<ul>
-				<li><a href="HT-Eclipse.html">How to</a></li>
-				<li><a href="A-Eclipse.html">Autor</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Consola</a>
-			<ul>
-				<li><a href="HT-Consola.html">How to</a></li>
-				<li><a href="A-Consola.html">Autor</a></li>
-			</ul>
-		</li>
+		<center><li>Committed</li>
+		<li>Modified</li>
+		<li>StAged</li>
+		<li>Untracked</li>
 	</ul>
-</nav>
-</header>
+	<p>Aquí os dejo una imagen con el ciclo de vida del estado de los archivos</p>
+	<img src="https://git-scm.com/figures/18333fig0201-tn.png">
+
+
+<h3>Git log </h3>
+
+	<p>El comando git log sirve para ver los commits que hemos echo. Se puede ver con el comando:</p>
+	<p1>$:git log --oneline --decorate</p1>
+
+	<p>Los 40 caracteres al lado de la palabra commit son dos cosas:</p>
+	<ol>
+		<li>Una suma de verificación SHA-1</li>
+		<li>El identificador unico del commit</li>
+	</ol>
+	<img src="https://pubci.files.wordpress.com/2016/04/243b8-screenshot2bfrom2b2015-06-212b16253a24253a40.png">
+
+
+<h2>Undoing changes</h2>
+
+<h3>Git revert</h3>
+
+
+
+<p>Genera un nuevo commit que deshace todos los cambios introducidos en "commit", luego lo aplica a la rama actual</p>
+<img src="https://www.atlassian.com/dam/jcr:37f46c9c-33c4-4a4d-b4dd-55e17e19bb60/03.svg" width="80%" />
+<p>El comando para realizar un revert sería:</p>
+<p1>:$ git revert "commit"</p1>
+
+
+
+
+<h2>Rewriting history</h2>
+<h3>Git rebase</h3>
+	<p>Rebase es el proceso de mover una rama de un commit a otro.<br> El proceso general se puede visualizar como el siguiente:</p>
+	<img src="https://www.atlassian.com/dam/jcr:e4a40899-636b-4988-9774-eaa8a440575b/02.svg" width="55%" />
+	<p>El comando para realizar un rebase sería:</p>
+	<p1>:$ git rebase "base"</p1>
+
+
+
+
+<h1>Collaborating</h1>
+<h2>Syncing</h2>
+<h3>Git remote</h3>
+
+	<p>Este comando se utiliza para añadir una cuenta remota. (Por ejemplo una cuenta de git hub para subir nuestros proyectos).</p>
+	<p>Para crear una nueva conexión remota hacemos el comando:</p>
+	<p1>:$ git remote add "nombre" "url"</p1>
+	<p>Aquí os dejo un ejemplo</p>
+	<p1>git remote add lito http://dev.example.com/lito.git</p1>
+
+<h3>Git fetch </h3>
+	<p>Este comando importa un repositorio remoto (normalmente de otra persona) en tu repositorio</p>
+	<p>Si queremos hacer un fetch usaremos el comando siguiente:</p>
+	<p1>:$ git fetch "ruta remota"</p1>
+
+<h3>Git pull</h3>
+	<p>Se usa para actualizar tu repositorio local al commit más nuevo, para esto ejecutaremos:</p>
+	<p1>$: git pull</p1>
+	<p>En tu directorio de trabajo, esto baja y fusiona los cambios remotos.</p>
+
+<h3>Git push </h3>
+	<p>Nuestros cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecutamos:  </p>
+	<p1>$: git push origin master</p1>
+
+	<p>Tienes que remplazar master por la rama a la que quieres enviar tus cambios.</p>
+	<p>Si no has clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, usa:</p>
+	<p1>$: git remote add origin "server"</p1>
+	<p>Ahora podrás subir tus cambios al repositorio remoto seleccionado.</p>
+
+	<p>Tambíen esta la opción de subir una rama, para ello ejecutaremos el comando:</p>
+	<p1>$: git push origin "Nombre de la rama"</p1>
+
+
+<h2>Using branches</h2>
+
+<h3>Git merge</h3>
+	<p>Este comando se utiliza para fusionar otra rama a tu rama activa (por ejemplo master).Para ello utilizaremos el comando:</p>
+	<p1>:$ git merge "y aqui pondremos la rama"</p1>
+
+
+<h2>Ramas</h2>
+<h3>Como hacer una rama nueva</h3>
+
+	<p>Para crear la rama y cambiarnos a ella, usamos el comando: </p>
+	<p1>$: git checkout -b "nombre de la rama"</p1>
+	
+	<p>Si solo queremos cambiar de rama, volviendo por ejemplo a la rama principal, utilizaremos el comando:</p>
+	<p1>$: git checkout master</p1>
+
+<h3>Como eliminar una rama </h3>
+	<p>Pongamonos en el caso que queremos borrar la rama "lito", para esto, tenemos que hacer el comando:</p>
+	<p1>:$ git branch -d lito</p1>
+
+<h3>Como cambiar de ramas</h3>
+	<p>Para cambiar de la rama actual a la rama Juan, tenemos que hacer el comando:</p>
+	<p1>$: checkout Juan </p1>
+    </div>
 </body>
+
 </html>
