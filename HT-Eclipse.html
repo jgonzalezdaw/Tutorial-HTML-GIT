@@ -2,43 +2,89 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tutoriales de Git</title>
+	<link rel="stylesheet" href="estilos.css" />
+<title>Tutorial Git con SourceTree</title>
 </head>
 <body>
-	<header>
-	<h1 id="inicio">Tutorial de Git con diferentes programas</h1>
-	<nav>
-	<ul>
-		<li><a href="#">GitKraken</a>
-			<ul>
-				<li><a href="HT-GitKraken.html">How to</a></li>
-				<li><a href="A-GitKraken.html">Autor</a></li>
+<h1> Eclipse</h1>
 
-			</ul>
-			</li>
-		<li>
-			<a href="#">Source Tree</a>
-			<ul>
-				<li><a href="HT-Source.html">How to</a></li>
-				<li><a href="A-Source.html">Autor</a></li>
+<div class="Texto">
+<h1>Empezamos git con eclipse</h1>
+<h3>Como crear un repositorio </h3>
+<h3>Configurar Git </h3>
+<h3>Git Init</h3>
 
-			</ul>
-		</li>
-		<li>
-			<a href="#">Eclipse</a>
-			<ul>
-				<li><a href="HT-Eclipse.html">How to</a></li>
-				<li><a href="A-Eclipse.html">Autor</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Consola</a>
-			<ul>
-				<li><a href="HT-Consola.html">How to</a></li>
-				<li><a href="A-Consola.html">Autor</a></li>
-			</ul>
-		</li>
-	</ul>
-</nav>
-</header>
+	<p>En primer lugar debemos descargarnos e instalar Eclipse en nuestro sistema.
+		Una vez descargado e instalado eclipse debemos instalar el plugin git en nuestro Eclipse.</p>
+	<img class="eclipse" src="imagenes/1.png">
+	<p>Desde aquí debemos añadir el repositorio del marketplace que incluye los plugins. 
+	Para ello debemos pulsar sobre el botón “Add” y añadir en la ventana que aparece el siguiente repositorio. </p>
+	<img class="eclipse" src="imagenes/2.png">
+	<p>Ahora nos saldran los plugins disponibles.Seleccionaremos el paquete “Eclipse Git Team Provider” y pulsamos sobre next. </p>
+	<img class="eclipse" src="imagenes/3.png">
+	<p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse. Y reiniciamos el Eclipse.</p>
+	<img class="eclipse" src="imagenes/4.png">	
+	<p>Una vez reiniciado Eclipse debemos conectarnos a nuestra cuenta de Git para empezar a utilizarlo. Para ello debemos seleccionar el menú “Window” y allí la opción Preferences.</p>
+	<p>Una vez allí situarnos en Preferences > Team > Git >Configuration</p>
+	<p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores user.name y user.email para identificarnos. </p>
+	<p>Una vez hechos estos pasos ya tenemos nuestro Eclipse listo para programar en equipo y con control de versiones, tanto para crear proyectos nuevos como para abrir los ya existentes.</p>
+	<img class="eclipse" src="imagenes/5.png">	
+<h3>Git Ignore </h3>
+	<p>Creamos un gitignore para ignorar archivos.</p>
+		<img class="eclipse" src="imagenes/6.png">	
+	
+<h2>Guardar cambios</h2>
+<h3>Git add y como hacer un commit</h3>
+	<p>Arrastramos lo que queremos commitear a “staged changes” y ponemos un mensaje del commit.</p>
+	<img class="eclipse" src="imagenes/7.png">	
+	<img class="eclipse" src="imagenes/8.png">	
+	<p>Despues hacemos click en “commit” para añadir el commit o en “Commit and Push” si queremos subir el commit a nuestro git.</p>
+<h3>Git stash </h3>
+	<img class="eclipse" src="imagenes/23.png">		
+<h2>Comprobando un repositorio</h2>
+<h3>Git status </h3>
+<h3>Git log </h3>
+	<p>Aquí podemos ver la historia de los commits.</p>
+	<img class="eclipse" src="imagenes/20.png">	
+
+<h2>Deshacer cambios</h2>
+<h3>Git reset </h3>
+	<img class="eclipse" src="imagenes/18.png">		
+
+<h2>Uniendo "historias"</h2>
+<h3>Git rebase</h3>
+	<img class="eclipse" src="imagenes/19.png">	
+
+<h3>Git reflog</h3>
+	<p>Aquí vemos una historia mas detallada de lo que hemos echo en nuestro proyecto.</p>
+	<img class="eclipse" src="imagenes/21.png">	
+<h1>Colaborando</h1>
+<h2>Syncing</h2>
+	<img class="eclipse" src="imagenes/22.png">	
+<h3>Git remote</h3>
+<h3>Git fetch </h3>
+	<img class="eclipse" src="imagenes/16.png">	
+<h3>Git pull</h3>
+	<p>Para bajarte todos los cambios de tu proyecto a tu repositorio hacemos click derecho sobre el proyecto y damos a pull.</p>
+	<img class="eclipse" src="imagenes/12.png">	
+	
+<h3>Git push </h3>
+	<img class="eclipse" src="imagenes/17.png">	
+<h2>Opciones de Ramas</h2>
+<h3>Git branch</h3>	
+<h3>Git checkout</h3>
+	<p>Con doble click sobre la rama a la que queremos cambiar, hacemos un checkout y nos cambiamos de rama.</p>
+	<img class="eclipse" src="imagenes/11.png">	
+<h3>Git merge</h3>
+		<img class="eclipse" src="imagenes/15.png">	
+<h3>Como hacer una rama nueva</h3>
+	<img class="eclipse" src="imagenes/9.png">	
+	<img class="eclipse" src="imagenes/10.png">	
+	<img class="eclipse" src="imagenes/11.png">	
+<h3>Como eliminar una rama </h3>
+	<img class="eclipse" src="imagenes/13.png">	
+	<img class="eclipse" src="imagenes/14.png">	
+	
+</div>
 </body>
 </html>
