@@ -1,215 +1,186 @@
-@CHARSET "UTF-8";
-<<<<<<< master
-<<<<<<< master
-html,h2{
-    padding: 0px;
-    margin: 0px;
-=======
-=======
-html,
-h2 {
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    margin: 0px;
-    display: auto;
-}
->>>>>>> Menu a medias con checkbox. Algunos cambios más.
-
-/* Menu & Submenu */
-.navigation {
-  width: 300px;
-}
-
-<<<<<<< master
-body{
-    margin:0px;
-    display:auto;
+    @CHARSET "UTF-8";
+    html,
+    h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+    html,
+    h2 {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+        display: auto;
+    }
+    /* Menu & Submenu */
     
->>>>>>> Margen Superior Arreglado. Retocando Menú
-}
-body{
-    margin: 0px;
-    display: auto;
-}
-.navigation {
-   width: 250px;
-    height: 100%;
-    position: fixed;
-    background-color: burlywood;
-}
-<<<<<<< master
-.mainmenu, .submenu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-=======
-div#texto{
-    width:80%;
-    margin-left: 400px;
-    padding:0px;
->>>>>>> Margen Superior Arreglado. Retocando Menú
-}
-.mainmenu a{
-    display: block;
-    background-color: none;
-    text-decoration: none;
-    padding: 10px;
-    color:#000;
-}
-.mainmenu a:hover{ 
-    background-color: lightslategrey;
-}
-.mainmenu li:hover .submenu{
-    display: block;
-    max-height: 200px;
-}
-.submenu a{
-    background-color: beige;
-}
-.submenu a:hover{
-    background-color: bisque;
-}
-.submenu{
-    overflow: hidden;
-    max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
-    transition: 
-}
-div#menu{
-    position: fixed;
-}
-#titulo{
-    margin-left:260px;
-   width: 200px;
-}
-#texto{
-    margin-top: 0;
-    width:auto;
-    margin-left:260px;
-}
-
-li a.home {
-    background-color: orangered;
-    color: white;
-}
-li a.source {
-    background-color: darkblue;
-    color: white;
-}
-li a.kraken {
-    background-color: darkgoldenrod;
-    color: white;
-}
-li a.consola {
-    background-color: darkgreen;
-    color: white;
-}
-li a.eclipse {
-    background-color: darkmagenta;
-    color: white;
-}
-
-.menu{
-    width: 200px;
-    height: 120px;
-    margin-bottom: 10px;
-}
-    
-=======
-.mainmenu, .submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.mainmenu a, .mainmenu label {
-  display: block;
-  background-color: #CCC;
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
-}
-
-.mainmenu a:hover {
-    background-color: #C5C5C5;
-}
-
-input[type=checkbox] {
-    display: none;
-}
-.mainmenu input[type=checkbox]:checked ~ ul.submenu {
-  display: block;
-  max-height: 200px;
-
-}
-
-
-.submenu a {
-  background-color: #999;
-}
-
-.submenu a:hover {
-  background-color: #666;
-}
-
-.submenu {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
-}
-
-div#menu {
-    position: fixed;
-}
-
-div#texto {
-    width: 80%;
-    margin-left: 400px;
-    padding: 0px;
->>>>>>> Menu a medias con checkbox. Algunos cambios más.
-}
-.source{
-    display:block;
-
-<<<<<<< master
-<<<<<<< master
-=======
-.dropdown:hover .dropdown-content {
-    display: block;
-    position: absolute; 
-    top: 0;
-    left: 0px;
- 	width: 120px; 
-	height: 60px;
- 	    
-} 
-img.menu{
-	width: 160px; 
-	height: 110px;
->>>>>>> Margen Superior Arreglado. Retocando Menú
-}
-.sourceimg{
-    width: 150px;
-    height: 150px;
-    margin-left: 45px;
-=======
-img.menu {
-    width: 160px;
-    height: 110px;
->>>>>>> Menu a medias con checkbox. Algunos cambios más.
-}
-.navigation > .menu{
-    display:inline-flex;
-    margin-left: 0px;
-    width: 165px;
-    height: 100px;
-}
-.terminalimg{
-    width: 160px;
-    height: 160px;
-    margin-left: 40px;
-}
-
+    .navigation {
+        width: 300px;
+    }
+    body {
+        margin: 0px;
+        display: auto;
+    }
+    body {
+        margin: 0px;
+        display: auto;
+    }
+    .navigation {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        background-color: burlywood;
+    }
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    div#texto {
+        width: 80%;
+        margin-left: 400px;
+        padding: 0px;
+    }
+    .mainmenu a {
+        display: block;
+        background-color: none;
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+    }
+    .mainmenu a:hover {
+        background-color: lightslategrey;
+    }
+    .mainmenu li:hover .submenu {
+        display: block;
+        max-height: 200px;
+    }
+    .submenu a {
+        background-color: beige;
+    }
+    .submenu a:hover {
+        background-color: bisque;
+    }
+    .submenu {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition:
+    }
+    div#menu {
+        position: fixed;
+    }
+    #titulo {
+        margin-left: 260px;
+        width: 200px;
+    }
+    #texto {
+        margin-top: 0;
+        width: auto;
+        margin-left: 260px;
+    }
+    li a.home {
+        background-color: orangered;
+        color: white;
+    }
+    li a.source {
+        background-color: darkblue;
+        color: white;
+    }
+    li a.kraken {
+        background-color: darkgoldenrod;
+        color: white;
+    }
+    li a.consola {
+        background-color: darkgreen;
+        color: white;
+    }
+    li a.eclipse {
+        background-color: darkmagenta;
+        color: white;
+    }
+    .menu {
+        width: 200px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .mainmenu a,
+    .mainmenu label {
+        display: block;
+        background-color: #CCC;
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+    }
+    .mainmenu a:hover {
+        background-color: #C5C5C5;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    .mainmenu input[type=checkbox]:checked ~ ul.submenu {
+        display: block;
+        max-height: 200px;
+    }
+    .submenu a {
+        background-color: #999;
+    }
+    .submenu a:hover {
+        background-color: #666;
+    }
+    .submenu {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+    }
+    div#menu {
+        position: fixed;
+    }
+    div#texto {
+        width: 80%;
+        margin-left: 400px;
+        padding: 0px;
+    }
+    .source {
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 120px;
+        height: 60px;
+    }
+    img.menu {
+        width: 160px;
+        height: 110px;
+    }
+    .sourceimg {
+        width: 150px;
+        height: 150px;
+        margin-left: 45px;
+    }
+    img.menu {
+        width: 160px;
+        height: 110px;
+    }
+    .navigation > .menu {
+        display: inline-flex;
+        margin-left: 0px;
+        width: 165px;
+        height: 100px;
+    }
+    .terminalimg {
+        width: 160px;
+        height: 160px;
+        margin-left: 40px;
+    }
