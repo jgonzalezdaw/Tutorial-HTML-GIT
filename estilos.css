@@ -4,9 +4,18 @@ h2 {
     margin: 0px;
     padding: 0px;
 }
+
+h1,h2,h3,h4{
+    color:beige;
+}
+p {
+    color:azure;
+}
 body {
     margin: 0px;
     display: auto;
+    font-family: sans-serif;
+     background-color: #141422; 
 }
 
 /* Menu & Submenu */
@@ -66,3 +75,11 @@ img.menu {
 .eclipse {
     display: block;
 }
+
+/* CONSOLA */
+
+/* ECLIPSE */
+
+/* GITKRAKEN */
+
+/* SOURCETREE */
