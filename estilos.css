@@ -83,7 +83,6 @@ input[type=checkbox] {
 div#texto {
     width: 50%;
     height: auto;
-    position:fixed;
     margin-left: 500px;
     margin-top: 20px;
     padding: 0px;
