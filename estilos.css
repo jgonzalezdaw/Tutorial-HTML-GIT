@@ -105,15 +105,21 @@ img.menu {
     color:white;
     background-color:black;
     font-family: Lucida Console;
+}
 
-/* ECLIPSE */
+    #textoLito h2{
+    font-size: 60px;
+    font-family: Lucida Console;
+    line-height: 10;
+}
 
-/* GITKRAKEN */
-img#gitkraken{
-    height: 160px;
-#textoLito body{
+    #textoLito body{
         text-align:center;
     }
+    #textoLito h3{
+    font-size: 50px;
+    font-family: Lucida Console;
+}
 
 #textoLito h.big{
     color:white;
@@ -121,18 +127,20 @@ img#gitkraken{
     font-family: Lucida Console;
      line-height: 7.5;
 }
-#textoLito h3{
-    font-size: 50px;
-    font-family: Lucida Console;
+
+/* ECLIPSE */
+
+/* GITKRAKEN */
+img#gitkraken{
+    height: 160px;
 }
 
-img#gitkrakentoohigh{
+
+
+
+img#gitkrakentoohigh {
     width: 600px;
     height: 300px;
-#textoLito h2{
-    font-size: 60px;
-    font-family: Lucida Console;
-    line-height: 10;
 }
 
 img#gitkrakentoolow{
