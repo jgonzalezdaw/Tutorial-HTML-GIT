@@ -20,9 +20,10 @@
                     <input id="checkbox_toggle" type="checkbox" />
                     <label for="checkbox_toggle">Terminal</label>
                     <ul class="submenu">
-                        <li><a href="">index1</a></li>
-                        <li><a href="">index2</a></li>
-                        <li><a href="">index3</a></li>
+                    <li><a href="HT-Consola.html">Inicio</a></li>
+                        <li><a href="#Instalación">Instalación</a></li>
+                        <li><a href="#GuardarCambios">Guardar cambios</a></li>
+                        <li><a href="#OpcionesRamas">Opciones de ramas</a></li>
                 </li>
                 </ul>
                 <li>
@@ -60,11 +61,11 @@
 
     <div id=textoLito>
     <h class="big"> Git por consola</h>
-       <img src="http://rogerdudler.github.io/git-guide/img/arrow.png">
+       <img src="imagenes/arrow.png">
        
 <h2>Getting Started</h2>
 
-<h3>Instalación</h3>
+<h3><a id=Instalación>Instalación</h3>
 	<p>Para instalar git en nuestro equipo ejecutaremos en la consola el comando:</p>
 	<p1>:$ sudo apt-get install git</p1>
 
@@ -98,7 +99,7 @@
 
 
 
-<h2>Guardar cambios</h2>
+<h2><a id=GuardarCambios>Guardar cambios</h2>
 <h3>Git add </h3>
 
 	<p>Para añadir el archivo hacemos el comando: </p>
@@ -120,7 +121,7 @@
 
 	<p>Los arhivos pueden estar en tres estados diferentes:</p>
 	<ul>
-		<center><li>Committed</li>
+		<li>Committed</li>
 		<li>Modified</li>
 		<li>StAged</li>
 		<li>Untracked</li>
@@ -166,8 +167,8 @@
 
 
 
-<h1>Collaborating</h1>
-<h2>Syncing</h2>
+<h2>Collaborating</h2>
+
 <h3>Git remote</h3>
 
 	<p>Este comando se utiliza para añadir una cuenta remota. (Por ejemplo una cuenta de git hub para subir nuestros proyectos).</p>
@@ -199,14 +200,7 @@
 	<p1>$: git push origin "Nombre de la rama"</p1>
 
 
-<h2>Using branches</h2>
-
-<h3>Git merge</h3>
-	<p>Este comando se utiliza para fusionar otra rama a tu rama activa (por ejemplo master).Para ello utilizaremos el comando:</p>
-	<p1>:$ git merge "y aqui pondremos la rama"</p1>
-
-
-<h2>Ramas</h2>
+<h2><a id=OpcionesRamas>Ramas</h2>
 <h3>Como hacer una rama nueva</h3>
 
 	<p>Para crear la rama y cambiarnos a ella, usamos el comando: </p>
@@ -222,6 +216,10 @@
 <h3>Como cambiar de ramas</h3>
 	<p>Para cambiar de la rama actual a la rama Juan, tenemos que hacer el comando:</p>
 	<p1>$: checkout Juan </p1>
+
+	<h3>Git merge</h3>
+	<p>Este comando se utiliza para fusionar otra rama a tu rama activa (por ejemplo master).Para ello utilizaremos el comando:</p>
+	<p1>:$ git merge "y aqui pondremos la rama"</p1>
     </div>
 </body>
 

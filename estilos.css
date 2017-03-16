@@ -97,13 +97,12 @@ img.menu {
 
 /* CONSOLA */
 #textoLito{
-text-align:center;
-margin-left:400px;
+    text-align:center;
+    margin-left:400px;
 }
- #textoLito ul > li{
-text-decoration:none;
-}
-#textoLito p1{color:white;
+
+#textoLito p1{
+    color:white;
     background-color:black;
     font-family: Lucida Console;
 
@@ -114,17 +113,17 @@ text-decoration:none;
     }
 
 #textoLito h.big{
-    color:black;
+    color:white;
     font-size: 60px;
     font-family: Lucida Console;
      line-height: 7.5;
 }
-#textoLito.h3{
+#textoLito h3{
     font-size: 50px;
     font-family: Lucida Console;
 }
 
-#textoLito.h2{
+#textoLito h2{
     font-size: 60px;
     font-family: Lucida Console;
     line-height: 10;
